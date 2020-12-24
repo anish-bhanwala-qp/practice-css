@@ -1,0 +1,167 @@
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+.product-gallery {
+    flex: 1 1 35%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.product-gallery__thumbnails {
+    margin: 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product-gallery__thumbnail {
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+}
+
+.product-gallery__preview {
+    margin: 8px;
+}
+
+.product-gallery__image {
+    min-width: 200px;
+    min-height: 200px;
+    margin: 0 8px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px 2px #ddd;
+}
+
+
+
+.product-details {
+    flex: 0 1 45%;
+}
+
+.product-details__header {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.price-table {
+    margin-bottom: 16px;
+}
+
+.price-table__label {
+    text-align: right;
+    color: #565959;
+}
+
+.price-table__mrp {
+    text-decoration: line-through;
+}
+
+.price-table__you-save,
+.price-table__mrp {
+    color: #565959;
+}
+
+.price-table__main-price {
+    font-size: 18px;
+}
+
+.product-details__time-remaining {
+    color: #565959;
+}
+
+.product-offers {
+    border: 1px solid #cdcdcd;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.product-offers li {
+    padding: 10px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.product-offers li:last-child {
+    border-bottom: none;
+}
+
+.product-offer__label {
+    color: #B12704;
+    font-weight: bold;
+}
+
+
+
+.product-actions {
+    flex: 0 1 260px;
+    margin: 16px;
+}
+
+.product-share {
+    text-align: center;
+}
+
+.buying-options,
+.other-sellers {
+    border: 1px solid #cdcdcd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0;
+}
+
+.buying-options__add-to-cart,
+.buying-options__buy-now,
+.add-to-wish-list {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px 0;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+.buying-options__add-to-cart {
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+}
+
+.buying-options__add-to-cart:hover,
+.buying-options__add-to-cart:active {
+    background: #f0c14b;
+}
+
+.buying-options__buy-now {
+    background: linear-gradient(to bottom, #f6c88f, #ed9220);
+}
+
+.buying-options__buy-now:hover,
+.buying-options__buy-now:active {
+    background: #ed9220;
+}
+
+.security-msg {
+    color: #C7511F;
+}
+
+.buying-options__address {
+    font-size: 12px;
+}
+
+.add-to-wish-list {
+    padding-left: 10px;
+    text-align: left;
+    border: 1px solid #afadad;
+    background: linear-gradient(to bottom, #f5f3f3, #e4e1e1);
+}
+
+.add-to-wish-list:hover,
+.add-to-wish-list:active {
+    background: linear-gradient(to bottom, #f1efef, #dbd9d9);
+}
+
+.other-sellers p {
+    margin: 0;
+    padding: 2px 0;
+}

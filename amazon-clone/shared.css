@@ -1,0 +1,22 @@
+.link,
+.link:visited {
+    color: #007185;
+}
+
+.separator {
+    height: 1px;
+    margin: 8px 0 16px 0;
+    background-color: #cdcdcd;
+}
+
+.price {
+    color: #B12704 !important;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: none;
+}
