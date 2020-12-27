@@ -1,7 +1,81 @@
+:root {
+    --font-color: #aaaaac;
+    --header: #141118;
+    --header-border: #2b2b31;
+    --search: #252329;
+    --search-border: #424145;
+    --search-placeholder: #adaeb0;
+    --messages: #1a1e22;
+    --sidebar: #19181e;
+    --message-input: #222629;
+    --font-bright: #d1d2d3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html,
 body,
 ul {
     margin: 0;
     padding: 0;
+    color: var(--font-color);
 }
 
+ul {
+    list-style: none;
+}
+
+html,
+body,
+ul,
+input,
+button,
+a {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    color: var(--font-color);
+}
+
+button:focus,
+button:active {
+    outline: none;
+}
+
+.flaticon::before {
+    margin-left: 0;
+    font-size: inherit;
+}
+
+.input-styled {
+    padding: 4px 8px;
+    margin: 8px 8px;
+    color: #D1D2D3;
+    background-color: var(--search);
+    border: 1px solid var(--search-border);
+    border-radius: 8px;
+}
+
+.open {
+    display: block !important;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}

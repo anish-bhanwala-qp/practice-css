@@ -1,0 +1,92 @@
+.main-header {
+    background-color: var(--header);
+    display: flex;
+    border-bottom: 1px solid var(--header-border);
+}
+
+.main-header__left,
+.main-header__center,
+.main-header__right {
+    flex: 1 1 auto;
+}
+
+.main-header__center {
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.global-search {
+    position: relative;
+    flex: 1 1 auto;
+    opacity: 0.8;
+}
+
+.global-search:hover {
+    opacity: 1;
+}
+
+.global-search__input {
+    width: calc(100% - 16px);
+    padding: 4px 8px;
+    margin: 8px 8px;
+    color: #D1D2D3;
+    background-color: var(--search);
+    border: 1px solid var(--search-border);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.global-search__input:hover,
+.global-search__input:active {
+    border: 1px solid #727175;
+}
+
+.global-search__placeholder {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.global-search__placeholder .flaticon::before {
+    font-size: 12px !important;
+}
+
+.input-search::placeholder {
+    text-align: center;
+    color: var(--search-placeholder);
+}
+
+
+.main-header__right {
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-my-account {
+    margin: 2px 8px;
+    height: 28px;
+    width: 28px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.img-my-account {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.online-status {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: green;
+    box-shadow: 0 0 0 2px var(--header);
+    border-radius: 50%;
+}

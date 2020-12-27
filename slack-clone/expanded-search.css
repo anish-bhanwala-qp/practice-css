@@ -1,0 +1,95 @@
+.search-expanded {
+    display: none;
+    background: var(--messages);
+    position: fixed;
+    top: 2px;
+    width: 98%;
+    margin: 0 1%;
+    border-radius: 8px;
+    border: 1px solid var(--search-border);
+}
+
+.search-expanded__close {
+    cursor: pointer;
+}
+
+.search-expanded__textbox {
+    border-bottom: 1px solid var(--search-border);
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+}
+
+.search-expanded__input {
+    flex: 1 1 auto;
+    margin: 0 8px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+}
+
+.search-expanded__body {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.search-categories,
+.recent-search {
+    margin: 20px 32px;
+}
+
+.search-categories__label,
+.recent-search__label {
+    color: #818385;
+    font-size: 12px;
+}
+
+.search-category-list {
+    margin-top: 8px;
+}
+
+.search-category-item {
+    background-color: #35383c;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-right: 8px;
+    color: var(--font-bright);
+    letter-spacing: 0.3px;
+}
+
+.recent-search__list-item {
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-bright);
+    display: flex;
+    align-items: center;
+}
+
+.recent-search__item-icon {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.recent-search__to {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+
+    background-color: var(--search-border);
+}
+
+.recent-search__to-thumbnail {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('images/anish-avatar.jpeg') center/contain no-repeat;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+.recent-search__to-text {
+    font-size: 12px;
+}
