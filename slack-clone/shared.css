@@ -9,6 +9,7 @@
     --sidebar: #19181e;
     --message-input: #222629;
     --font-bright: #d1d2d3;
+    --anchor-color: #1D9Bd1;
 }
 
 * {
@@ -37,6 +38,11 @@ a {
     font-size: 14px;
 }
 
+a {
+    color: var(--anchor-color);
+    text-decoration: none;
+}
+
 input:focus {
     outline: none;
 }
@@ -53,11 +59,6 @@ button {
 button:focus,
 button:active {
     outline: none;
-}
-
-.flaticon::before {
-    margin-left: 0;
-    font-size: inherit;
 }
 
 .input-styled {
@@ -78,4 +79,8 @@ button:active {
     width: 100vw;
     height: 100vh;
     display: none;
+}
+
+.main-content {
+    display: flex;
 }

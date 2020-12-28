@@ -1,0 +1,19 @@
+.icon {
+    width: 14px;
+    height: 14px;
+    fill: var(--font-color);
+}
+
+.icon:hover {   
+    fill: var(--font-bright);
+    cursor: pointer;
+}
+
+.icon-more {
+    transform: rotate(90deg);
+}
+
+.accordion-icon {
+    width: 10px;
+    height: 10px;
+}

@@ -7,11 +7,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="flaticon/flaticon.css" />
     <link rel="stylesheet" type="text/css" href="shared.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="open-iconic.min.svg" /> -->
+    <link rel="stylesheet" type="text/css" href="icon.css" />
     <link rel="stylesheet" type="text/css" href="header.css" />
     <link rel="stylesheet" type="text/css" href="expanded-search.css" />
     <link rel="stylesheet" type="text/css" href="zindex.css" />
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="content.css" />
   </head>
   <body>
     <div class="backdrop"></div>
@@ -20,18 +23,22 @@
 
       <div class="main-header__center">
         <button type="button" class="btn btn-history">
-          <span class="flaticon flaticon-time"></span>
+          <svg viewBox="0 0 8 8" class="icon icon-clock">
+            <use xlink:href="open-iconic.svg#clock"></use>
+          </svg>
         </button>
         <div class="global-search js-global-search-input">
           <button type="button" class="global-search__input">
             <span class="global-search__placeholder">
-              <span class="flaticon flaticon-search"></span>
+              <span class="icon icon-search"></span>
               Search QuestionPro
             </span>
           </button>
         </div>
         <button type="button" class="btn btn-help">
-          <span class="flaticon flaticon-help"></span>
+          <svg viewBox="0 0 8 8" class="icon icon-question-mark">
+            <use xlink:href="open-iconic.svg#question-mark"></use>
+          </svg>
         </button>
       </div>
 
@@ -49,14 +56,14 @@
 
     <div class="search-expanded js-expanded-search-container">
       <div class="search-expanded__textbox">
-        <span class="flaticon flaticon-search"></span>
+        <span class="icon icon-search"></span>
         <input
           type="text"
           class="input-styled search-expanded__input js-search-expanded-input"
           placeholder="Search all across Slack"
         />
         <span
-          class="search-expanded__close flaticon flaticon-multiply js-expanded-search-close"
+          class="search-expanded__close icon icon-multiply js-expanded-search-close"
         ></span>
       </div>
 
@@ -65,19 +72,19 @@
           <span class="search-categories__label"> I'm looking for... </span>
           <div class="search-category-list">
             <button class="search-category-item">
-              <span class="flaticon flaticon-placeholders"></span>
+              <span class="icon icon-placeholders"></span>
               Messages
             </button>
             <button class="search-category-item">
-              <span class="flaticon flaticon-folder-19"></span>
+              <span class="icon icon-folder-19"></span>
               Files
             </button>
             <button class="search-category-item">
-              <span class="flaticon flaticon-list"></span>
+              <span class="icon icon-list"></span>
               Channels
             </button>
             <button class="search-category-item">
-              <span class="flaticon flaticon-users"></span>
+              <span class="icon icon-users"></span>
               People
             </button>
           </div>
@@ -87,15 +94,11 @@
           <span class="recent-search__label">Recent searches</span>
           <ul class="recent-search__list">
             <li class="recent-search__list-item">
-              <span
-                class="recent-search__item-icon flaticon flaticon-time"
-              ></span>
+              <span class="recent-search__item-icon icon icon-time"></span>
               teamlead
             </li>
             <li class="recent-search__list-item">
-              <span
-                class="recent-search__item-icon flaticon flaticon-time"
-              ></span>
+              <span class="recent-search__item-icon icon icon-time"></span>
               localhost
               <span class="recent-search__to">
                 <span class="recent-search__to-thumbnail"></span>
@@ -103,9 +106,7 @@
               </span>
             </li>
             <li class="recent-search__list-item">
-              <span
-                class="recent-search__item-icon flaticon flaticon-time"
-              ></span>
+              <span class="recent-search__item-icon icon icon-time"></span>
               8080
               <span class="recent-search__to">
                 <span class="recent-search__to-thumbnail"></span>
@@ -113,9 +114,7 @@
               </span>
             </li>
             <li class="recent-search__list-item">
-              <span
-                class="recent-search__item-icon flaticon flaticon-time"
-              ></span>
+              <span class="recent-search__item-icon icon icon-time"></span>
               localhost
             </li>
           </ul>
@@ -123,123 +122,295 @@
       </div>
     </div>
 
-    <main>
+    <main class="main-content">
       <section class="sidebar">
         <header class="sidebar__header">
-          <div class="dropdown-workspace"></div>
-          <button type="button" class="btn-new-msg"></button>
+          <div class="dropdown-workspace">
+            QuestionPro
+
+            <svg viewBox="0 0 8 8" class="icon icon-chevron-bottom">
+              <use xlink:href="open-iconic.svg#chevron-bottom"></use>
+            </svg>
+          </div>
+          <button type="button" class="btn-new-msg">
+            <svg viewBox="0 0 8 8" class="icon icon-pencil">
+              <use xlink:href="open-iconic.svg#pencil"></use>
+            </svg>
+          </button>
         </header>
 
-        <div class="sidebar__list-item">
-          <div class="sidebar__list-item active">
-            <span class="icon i-left-align"></span>
-            All unreads
+        <div class="sidebar-content">
+          <div class="">
+            <div class="sidebar__list-item active">
+              <svg viewBox="0 0 8 8" class="icon icon-align-left">
+                <use xlink:href="open-iconic.svg#align-left"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> All unreads </span>
+            </div>
+            <div class="sidebar__list-item active">
+              <svg viewBox="0 0 8 8" class="icon icon-document">
+                <use xlink:href="open-iconic.svg#document"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> Threads </span>
+            </div>
+            <div class="sidebar__list-item active">
+              <svg viewBox="0 0 8 8" class="icon icon-chat">
+                <use xlink:href="open-iconic.svg#chat"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> All DMs </span>
+            </div>
+            <div class="sidebar__list-item active">
+              <span class="icon">@</span>
+              <span class="sidebar__list-item-text">
+                Mentions & reactions
+              </span>
+            </div>
+            <div class="sidebar__list-item active">
+              <svg viewBox="0 0 8 8" class="icon icon-bookmark">
+                <use xlink:href="open-iconic.svg#bookmark"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> Saved items </span>
+            </div>
+            <div class="sidebar__list-item active">
+              <svg viewBox="0 0 8 8" class="icon icon-more">
+                <use xlink:href="open-iconic.svg#ellipses"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> More </span>
+            </div>
           </div>
-          <div class="sidebar__list-item active">
-            <span class="icon i-msg"></span>
-            Threads
-          </div>
-          <div class="sidebar__list-item active">
-            <span class="icon i-chat"></span>
-            All DMs
-          </div>
-          <div class="sidebar__list-item active">
-            <span class="icon i-email"></span>
-            Mentions & reactions
-          </div>
-          <div class="sidebar__list-item active">
-            <span class="icon i-bookmark"></span>
-            Saved items
-          </div>
-          <div class="sidebar__list-item active">
-            <span class="icon i-more"></span>
-            More
-          </div>
-        </div>
 
-        <div class="sidebar__list-item">
-          <span class="icon i-dropdown"></span>
-          Channels
-          <span class="icon i-more"></span>
-          <span class="icon i-plus"></span>
-        </div>
+          <div class="accordion">
+            <div class="sidebar__list-item sidebar__list-item-header">
+              <span class="sidebar__list-item-text">
+                <svg
+                  viewBox="0 0 8 8"
+                  class="accordion-icon icon icon-caret-bottom"
+                >
+                  <use xlink:href="open-iconic.svg#caret-bottom"></use>
+                </svg>
+                Channels
+              </span>
 
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-public"></span>
-          aundh-office
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-public"></span>
-          benchmarkingforservers
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-private"></span>
-          cookie-mangement
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-public"></span>
-          general
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-private"></span>
-          ft-enable-elasticsearch-dashboard
-        </div>
+              <div class="sidebar__list-item-options">
+                <button class="channel-more" type="button">
+                  <svg viewBox="0 0 8 8" class="icon icon-more">
+                    <use xlink:href="open-iconic.svg#ellipses"></use>
+                  </svg>
+                </button>
+                <button class="channel-plus" type="button">
+                  <svg viewBox="0 0 8 8" class="icon icon-plus">
+                    <use xlink:href="open-iconic.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-        <div class="sidebar__list-item">
-          <span class="icon i-dropdown"></span>
-          Direct messages
-          <span class="icon i-more"></span>
-          <span class="icon i-plus"></span>
-        </div>
+            <div class="sidebar__list-item">
+              <svg
+                viewBox="0 0 8 8"
+                class="accordion-icon icon icon-lock-locked"
+              >
+                <use xlink:href="open-iconic.svg#lock-locked"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> aundh-office </span>
+            </div>
+            <div class="sidebar__list-item">
+              <svg
+                viewBox="0 0 8 8"
+                class="accordion-icon icon icon-lock-unlocked"
+              >
+                <use xlink:href="open-iconic.svg#lock-unlocked"></use>
+              </svg>
+              <span class="sidebar__list-item-text">
+                benchmarkingforservers
+              </span>
+            </div>
+            <div class="sidebar__list-item">
+              <svg
+                viewBox="0 0 8 8"
+                class="accordion-icon icon icon-lock-locked"
+              >
+                <use xlink:href="open-iconic.svg#lock-locked"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> cookie-mangement </span>
+            </div>
+            <div class="sidebar__list-item">
+              <svg
+                viewBox="0 0 8 8"
+                class="accordion-icon icon icon-lock-unlocked"
+              >
+                <use xlink:href="open-iconic.svg#lock-unlocked"></use>
+              </svg>
+              <span class="sidebar__list-item-text"> general </span>
+            </div>
+            <div class="sidebar__list-item">
+              <svg
+                viewBox="0 0 8 8"
+                class="accordion-icon icon icon-lock-locked"
+              >
+                <use xlink:href="open-iconic.svg#lock-locked"></use>
+              </svg>
+              <span class="sidebar__list-item-text">
+                ft-enable-elasticsearch-dashboard
+              </span>
+            </div>
+          </div>
 
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-thumbnail"></span>
-          Slackbot
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-thumbnail"></span>
-          Anish Bhanwala
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-thumbnail"></span>
-          Aishwarya Banmeru
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-thumbnail"></span>
-          Angad Rajput
-        </div>
-        <div class="sidebar__list-item--indented">
-          <span class="icon i-thumbnail"></span>
-          Angad Rajput, mahesh, Shri
+          <div class="accordion">
+            <div class="sidebar__list-item sidebar__list-item-header">
+              <span class="sidebar__list-item-text">
+                <svg
+                  viewBox="0 0 8 8"
+                  class="accordion-icon icon icon-caret-bottom"
+                >
+                  <use xlink:href="open-iconic.svg#caret-bottom"></use>
+                </svg>
+                Direct messages
+              </span>
+
+              <div class="sidebar__list-item-options">
+                <button class="channel-more" type="button">
+                  <svg viewBox="0 0 8 8" class="icon icon-more">
+                    <use xlink:href="open-iconic.svg#ellipses"></use>
+                  </svg>
+                </button>
+                <button class="channel-plus" type="button">
+                  <svg viewBox="0 0 8 8" class="icon icon-plus">
+                    <use xlink:href="open-iconic.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="sidebar__list-item">
+              <span class="list-item-thumbnail">
+                <img
+                  class="sidebar__thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </span>
+              <span class="sidebar__list-item-text">Slackbot</span>
+            </div>
+            <div class="sidebar__list-item">
+              <span class="list-item-thumbnail">
+                <img
+                  class="sidebar__thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </span>
+              <span class="sidebar__list-item-text">Anish Bhanwala</span>
+            </div>
+            <div class="sidebar__list-item">
+              <span class="list-item-thumbnail">
+                <img
+                  class="sidebar__thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </span>
+              <span class="sidebar__list-item-text">Aishwarya Banmeru</span>
+            </div>
+            <div class="sidebar__list-item">
+              <span class="list-item-thumbnail">
+                <img
+                  class="sidebar__thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </span>
+              <span class="sidebar__list-item-text">Angad Rajput</span>
+            </div>
+            <div class="sidebar__list-item">
+              <span class="list-item-thumbnail">
+                <img
+                  class="sidebar__thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </span>
+              <span class="sidebar__list-item-text"
+                >Angad Rajput, mahesh, Shri</span
+              >
+            </div>
+          </div>
         </div>
       </section>
       <section class="channel-content">
-        <header class="main-header">
+        <header class="channel-content__header">
           <div class="channel-info">
-            <span class="channel-name"></span>
-            <span class="icon i-start"></span>
-            <div class="channel-desc"></div>
+            <span class="channel-name">#dev-ops</span>
+            <svg viewBox="0 0 8 8" class="icon icon-star">
+              <use xlink:href="open-iconic.svg#star"></use>
+            </svg>
+            <div class="channel-desc">
+              <span class="channel-desc__pin-icon">
+                <svg viewBox="0 0 8 8" class="icon icon-pin">
+                  <use xlink:href="open-iconic.svg#pin"></use>
+                </svg>
+                1
+              </span>
+
+              <span class="channel-desc__text">
+                DevOps shift - [14-Dec To 18-Dec]
+              </span>
+            </div>
           </div>
 
-          <div class="channel-options">
+          <div class="channel-info__member-details">
             <div class="member-details">
               <div class="member-thumbnails">
-                <span class="member-thumbnail"></span>
-                <span class="member-thumbnail"></span>
-                <span class="member-thumbnail"></span>
+                <span class="member-thumbnail">
+                  <img
+                    class="member-thumbnail__img"
+                    src="images/anish-avatar.jpeg"
+                    alt="my-account"
+                  />
+                </span>
+                <span class="member-thumbnail">
+                  <img
+                    class="member-thumbnail__img"
+                    src="images/anish-avatar.jpeg"
+                    alt="my-account"
+                  />
+                </span>
+                <span class="member-thumbnail">
+                  <img
+                    class="member-thumbnail__img"
+                    src="images/anish-avatar.jpeg"
+                    alt="my-account"
+                  />
+                </span>
               </div>
-              <span class="member-count">20</span>
+              <span class="member-count">176</span>
             </div>
 
-            <span class="icon i-add-user"></span>
-            <span class="icon i-info"></span>
+            <svg
+              viewBox="0 0 8 8"
+              class="channel-info__people-icon icon icon-people"
+            >
+              <use xlink:href="open-iconic.svg#people"></use>
+            </svg>
+            <svg
+              viewBox="0 0 8 8"
+              class="channel-info__info-icon icon icon-info"
+            >
+              <use xlink:href="open-iconic.svg#info"></use>
+            </svg>
           </div>
         </header>
 
         <div class="channel-content__message-list">
           <div class="message-list">
             <div class="message">
-              <div class="member-thumbnail"></div>
+              <div class="message__member-thumbnail">
+                <img
+                  class="message__member-thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </div>
               <div class="message-details">
                 <span class="member-name">Lalit Jain</span>
                 <span class="message-timestamp">12:06 PM</span>
@@ -251,14 +422,26 @@
                 </div>
 
                 <div class="message-reply">
-                  <div class="message-reply__thumbnail"></div>
+                  <div class="message-reply__thumbnail">
+                    <img
+                      class="message-reply__thumbnail-img"
+                      src="images/anish-avatar.jpeg"
+                      alt="my-account"
+                    />
+                  </div>
                   <button class="btn-view-reply" type="button">1 reply</button>
                   <span class="message-timestamp">Today at 2:37 PM</span>
                 </div>
               </div>
             </div>
             <div class="message">
-              <div class="member-thumbnail"></div>
+              <div class="message__member-thumbnail">
+                <img
+                  class="message__member-thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </div>
               <div class="message-details">
                 <span class="member-name">Lalit Jain</span>
                 <span class="message-timestamp">12:06 PM</span>
@@ -270,14 +453,26 @@
                 </div>
 
                 <div class="message-reply">
-                  <div class="message-reply__thumbnail"></div>
+                  <div class="message-reply__thumbnail">
+                    <img
+                      class="message-reply__thumbnail-img"
+                      src="images/anish-avatar.jpeg"
+                      alt="my-account"
+                    />
+                  </div>
                   <button class="btn-view-reply" type="button">1 reply</button>
                   <span class="message-timestamp">Today at 2:37 PM</span>
                 </div>
               </div>
             </div>
             <div class="message">
-              <div class="member-thumbnail"></div>
+              <div class="message__member-thumbnail">
+                <img
+                  class="message__member-thumbnail-img"
+                  src="images/anish-avatar.jpeg"
+                  alt="my-account"
+                />
+              </div>
               <div class="message-details">
                 <span class="member-name">Lalit Jain</span>
                 <span class="message-timestamp">12:06 PM</span>
@@ -289,7 +484,13 @@
                 </div>
 
                 <div class="message-reply">
-                  <div class="message-reply__thumbnail"></div>
+                  <div class="message-reply__thumbnail">
+                    <img
+                      class="message-reply__thumbnail-img"
+                      src="images/anish-avatar.jpeg"
+                      alt="my-account"
+                    />
+                  </div>
                   <button class="btn-view-reply" type="button">1 reply</button>
                   <span class="message-timestamp">Today at 2:37 PM</span>
                 </div>
@@ -308,18 +509,7 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        Icons made by
-        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
-          >Smashicons</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
-    </footer>
+    <footer>footer</footer>
 
     <script src="main.js" type="text/javascript"></script>
   </body>
