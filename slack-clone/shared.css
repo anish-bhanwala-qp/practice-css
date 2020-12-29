@@ -10,6 +10,9 @@
     --message-input: #222629;
     --font-bright: #d1d2d3;
     --anchor-color: #1D9Bd1;
+    --message-background: #222629;
+    --message-border: #545455;
+    --message-border-highlight: #818385;
 }
 
 * {

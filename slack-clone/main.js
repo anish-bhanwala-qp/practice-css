@@ -7,6 +7,10 @@ const expandedSearchContainer = document.querySelector(
 const expandedSearchInput = document.querySelector(".js-search-expanded-input");
 const globalSearchInput = document.querySelector(".js-global-search-input");
 const backdrop = document.querySelector(".backdrop");
+const messageInput = document.querySelector(".js-input-message");
+const messageInputContainer = document.querySelector(
+  ".js-message-input__container"
+);
 
 const hideExpandedSearch = () => {
   expandedSearchContainer.classList.remove("open");
@@ -22,3 +26,11 @@ globalSearchInput.addEventListener("click", () => {
 });
 
 expandedSearchCloseIcon.addEventListener("click", hideExpandedSearch);
+
+messageInput.addEventListener("focus", () => {
+  messageInputContainer.classList.toggle("focus");
+});
+
+messageInput.addEventListener("blur", () => {
+  messageInputContainer.classList.toggle("focus");
+});
