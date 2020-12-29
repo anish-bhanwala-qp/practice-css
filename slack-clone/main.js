@@ -11,9 +11,14 @@ const messageInput = document.querySelector(".js-input-message");
 const messageInputContainer = document.querySelector(
   ".js-message-input__container"
 );
+const sidebarHeader = document.querySelector(".js-sidebar__header");
+const sidebarWorkspaceMenu = document.querySelector(
+  ".js-dropdown-workspace__menu"
+);
 
 const hideExpandedSearch = () => {
   expandedSearchContainer.classList.remove("open");
+  sidebarWorkspaceMenu.classList.remove("open");
   backdrop.classList.remove("open");
 };
 
@@ -34,3 +39,10 @@ messageInput.addEventListener("focus", () => {
 messageInput.addEventListener("blur", () => {
   messageInputContainer.classList.toggle("focus");
 });
+
+const showSidebarWorkspaceMenu = () => {
+  sidebarWorkspaceMenu.classList.add("open");
+  backdrop.classList.add("open");
+};
+
+sidebarHeader.addEventListener("click", showSidebarWorkspaceMenu);

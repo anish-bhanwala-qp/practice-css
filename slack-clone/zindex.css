@@ -1,3 +1,15 @@
 .search-expanded {
     z-index: 10;
 }
+
+.dropdown-workspace__menu {
+    z-index: 20;
+}
+
+.message-scroller {
+    z-index: 5;
+}
+
+.backdrop {
+    z-index: 8;
+}

@@ -13,6 +13,7 @@
     --message-background: #222629;
     --message-border: #545455;
     --message-border-highlight: #818385;
+    --list-item-highlighted: #1264a3;
 }
 
 * {
@@ -86,4 +87,26 @@ button:active {
 
 .main-content {
     display: flex;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--font-color) transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0.6;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--font-color);
+    border-radius: 20px;
+    opacity: 0.6;
 }
