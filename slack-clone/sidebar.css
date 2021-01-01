@@ -28,8 +28,8 @@
 .dropdown-workspace__menu {
     display: none;
     position: absolute;
-    left: 10px;
-    top: 60px;
+    left: 0;
+    top: 30px;
     border: 1px solid var(--message-border);
     border-radius: 8px;
     width: 300px;
