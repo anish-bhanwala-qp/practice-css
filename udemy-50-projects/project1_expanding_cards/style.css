@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.footer {}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    height: 100%;
+    margin: 10px;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: flex-grow 0.7s ease-in-out;
+    position: relative;
+}
+
+.card-title {
+    margin: 0;
+    color: white;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    opacity: 0;
+    transition: opacity 0.3s 0.3s ease-in;
+}
+
+.active {
+    flex-grow: 6;
+}
+
+.active .card-title {
+    opacity: 1;
+}
+
+.adam {
+    background-image: url('images/adam-kool-ndN00KmbJ1c-unsplash.jpg');
+}
+
+.andreas {
+    background-image: url('images/andreas-gucklhorn-mawU2PoJWfU-unsplash.jpg');
+}
+
+.dave {
+    background-image: url('images/dave-hoefler-lsoogGC_5dg-unsplash.jpg');
+}
+
+.eberhard {
+    background-image: url('images/eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg');
+}
+
+.vincent {
+    background-image: url('images/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg');
+}
+
+.lukasz {
+    background-image: url('images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg');
+}
+
+.wil {
+    background-image: url('images/wil-stewart-pHANr-CpbYM-unsplash.jpg');
+}
+
+
+@media (max-width: 480px) {
+
+    .card:nth-of-type(4),
+    .card:nth-of-type(5),
+    .card:nth-of-type(6) {
+        display: none;
+    }
+}
