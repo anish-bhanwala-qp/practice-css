@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #4682B4;
+    --form-bg-color: #295071;
+    --btn-color: #ADD8E6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.form {
+    background-color: var(--form-bg-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    min-width: 400px;
+}
+
+.form-group {
+    margin: 2rem 0;
+    position: relative;
+    z-index: 0;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.letter {
+    position: relative;
+    top: 36px;
+    padding: 0;
+    margin-left: -3px;
+    z-index: -1;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.form-group.active .letter {
+    top: 0;
+    color: var(--btn-color);
+}
+
+.letter:first-child {
+    margin-left: 0;
+}
+
+.form-input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+}
+
+.from-group.active .form-input {
+    border-color: var(--btn-color);
+}
+
+.btn {
+    background-color: var(--btn-color);
+    color: black;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.register-msg {
+    padding: 1rem 0;
+}
+
+.register-link {
+    text-decoration: none;
+    color: var(--btn-color);
+}
