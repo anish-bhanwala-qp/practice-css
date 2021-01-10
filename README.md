@@ -33,3 +33,12 @@ Take aways / Differences between my approach and instructor.
 
 1. Use keydown instead of keyup.
 2. For a absolute positioned element use width 100% and text-align center to align a heading in center and above a relatively positioned element.
+
+# FAQ Collapse (project 12)
+
+1. For font-awesome you can use "unicode" to add icon dynamically using ::before/::after pseudo selectors. E.g.
+   .faq.active::before {
+   content: '\f075',
+   font-family: 'Font Awesome 5 free';
+   }
+2. For the open/close buttons, the instructor wrapped both the icons in a button and used CSS to show/hide the icons depending upon the parent active class.

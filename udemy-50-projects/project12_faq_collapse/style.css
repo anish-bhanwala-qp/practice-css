@@ -30,6 +30,7 @@ body {
     color: #666;
     position: relative;
     overflow: hidden;
+    transition: 0.3s ease;
 }
 
 .faq.open {
