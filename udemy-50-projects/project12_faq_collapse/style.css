@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.page-title {
+    font-size: 36px;
+}
+
+.faq {
+    max-width: 600px;
+    border: 1px solid #888;
+    padding: 36px;
+    padding-right: 120px;
+    margin: 16px;
+    border-radius: 8px;
+    color: #666;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq.open {
+    background-color: white;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.faq-bg {
+    position: absolute;
+    font-size: 110px;
+    opacity: 0.2;
+    bottom: 10px;
+    left: 20px;
+    visibility: hidden;
+}
+
+.faq.open .faq-bg {
+    visibility: visible;
+}
+
+.faq-bg-one {
+    color: green;
+}
+
+.faq-bg-two {
+    top: -16px;
+    left: -16px;
+    color: rgb(68, 169, 236);
+    transform: rotateY(180deg);
+}
+
+.icon {
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon.fa-times-circle {
+    color: #999;
+    font-size: 28px;
+}
+
+.question {
+    font-size: 20px;
+    margin: 0;
+}
+
+.answer {
+    display: none;
+    margin: 16px 0 0 0;
+}
+
+.faq.open .answer {
+    display: block;
+}
