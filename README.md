@@ -28,3 +28,8 @@ Take aways / Differences between my approach and instructor.
    One way could be do nothing on "hover" and scale down on press i.e. ".btn:active {transform: scale(0.98)}.
 2. **Accept vs Content-type**: To specify what response should server send use "Accept". To specify the body content type either in request (in POST/PUT request) or server response use "Content-Type" header.
 3.
+
+# Event keyCodes (project 11)
+
+1. Use keydown instead of keyup.
+2. For a absolute positioned element use width 100% and text-align center to align a heading in center and above a relatively positioned element.
