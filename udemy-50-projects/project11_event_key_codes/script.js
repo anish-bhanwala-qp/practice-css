@@ -4,14 +4,11 @@ const eventCode = document.querySelector(".js-event-code");
 const eventKeyCode = document.querySelector(".js-event-key-code");
 const eventKey = document.querySelector(".js-event-key");
 
-window.addEventListener("keyup", (event) => {
+window.addEventListener("keydown", (event) => {
   startMsg.style.display = "none";
   container.style.display = "flex";
 
   eventCode.innerText = event.code;
   eventKey.innerText = event.key;
   eventKeyCode.innerText = event.keyCode;
-
-  event.preventDefault();
-  event.stopPropagation();
 });
