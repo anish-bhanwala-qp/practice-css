@@ -42,3 +42,9 @@ Take aways / Differences between my approach and instructor.
    font-family: 'Font Awesome 5 free';
    }
 2. For the open/close buttons, the instructor wrapped both the icons in a button and used CSS to show/hide the icons depending upon the parent active class.
+
+# Random Choice Picker (project 13)
+
+1. Instead of using variable to track and call clearInterval, the instructor used setTimeout that after given time cleared the interval.
+2. Also, I thought Math.random() returns max value of 1. But that is not the case. So to pick random value from an array we can use: Math.floor(Math.random() \* array.length).
+3. I had added transition for animation but wasn't really required.

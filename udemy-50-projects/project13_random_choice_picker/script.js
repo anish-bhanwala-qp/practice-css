@@ -33,7 +33,7 @@ choiceInput.addEventListener("keyup", (event) => {
 });
 
 const randomlySelectOne = (allChoices) => {
-  const randomIndex = Math.round(Math.random() * (allChoices.length - 1));
+  const randomIndex = Math.round(Math.random() * allChoices.length);
   allChoices.forEach((c) => {
     if (c.classList.contains("selected")) {
       c.classList.remove("selected");
