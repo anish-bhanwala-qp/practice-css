@@ -53,3 +53,8 @@ Take aways / Differences between my approach and instructor.
 
 1. I used `nav` instead of `header`. `header` makes more sense as I don't have any navigation related content in the `nav` tab.
 2. I used `keyup` event to detect `Enter` press on search input. Wrapping `input` in a `form` tag and then handling `submit` event makes more sense and is relatively easy to handle.
+
+# Background Slider (project 18)
+
+1. Using z-index to create different layers and `overflow: hidden` to hide overflowing content.
+2. Just setting transition to `transition: background 1s` animates background as it's resized automatically by the browser.
