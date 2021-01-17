@@ -48,3 +48,8 @@ Take aways / Differences between my approach and instructor.
 1. Instead of using variable to track and call clearInterval, the instructor used setTimeout that after given time cleared the interval.
 2. Also, I thought Math.random() returns max value of 1. But that is not the case. So to pick random value from an array we can use: Math.floor(Math.random() \* array.length).
 3. I had added transition for animation but wasn't really required.
+
+# Movie App (project 17)
+
+1. I used `nav` instead of `header`. `header` makes more sense as I don't have any navigation related content in the `nav` tab.
+2. I used `keyup` event to detect `Enter` press on search input. Wrapping `input` in a `form` tag and then handling `submit` event makes more sense and is relatively easy to handle.
