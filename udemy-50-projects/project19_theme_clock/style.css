@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    transition: background-color 1s;
+}
+
+body.theme-dark {
+    background-color: #111;
+    color: white;
+}
+
+.theme-btn {
+    margin: 100px 0 150px;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-btn:focus,
+.theme-btn:active {
+    outline: none;
+}
+
+.theme-dark .theme-btn {
+    background-color: white;
+    color: black;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.second-hand,
+.minute-hand,
+.hour-hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 3px;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 1s;
+}
+
+
+.theme-dark .minute-hand,
+.theme-dark .hour-hand {
+    background-color: white;
+}
+
+.second-hand {
+    height: 90px;
+    background-color: red;
+}
+
+.minute-hand {
+    height: 80px;
+}
+
+.hour-hand {
+    height: 60px;
+}
+
+.clock-center {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-3px, 50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-center::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    display: block;
+}
+
+.theme-dark .clock-center::before {
+    background-color: white;
+}
+
+.time {
+    margin: 10px 0;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.date-formatted {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.date {
+    display: inline-block;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.theme-dark .date {
+    background-color: white;
+    color: black;
+}
