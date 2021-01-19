@@ -68,3 +68,7 @@ Take aways / Differences between my approach and instructor.
 1. Using css variables to change colors by overriding `:root` scope with `html.dark` scope. Nice way to not hard-code colors.
 2. Using multiple classes to better target and style similar components. Specifically for clocks hands I used `second-hand`, `minute-hand`, and `hour-hand` classes. Whereas the instructor used `needle second`, `needle minute`, and `needle hour` classes. Now for the similar style use `needle` class.
 3. Use `display: inline-flex;` to vertically and horizontally align text in an inline elment.
+
+# Button Ripple Effect (project 20)
+
+1. I used `getBoundingClientRect` instead of `event.target.offsetTop`. This can have a slight performance. The `offsetTop` is calculated from beginning of your top most relative containre. The `getBoundingClientRect` is relative to the current view port.
