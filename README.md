@@ -31,22 +31,26 @@ Take aways / Differences between my approach and instructor.
 
 # Event keyCodes (project 11)
 
-1. Use keydown instead of keyup.
-2. For a absolute positioned element use width 100% and text-align center to align a heading in center and above a relatively positioned element.
+1. Used `keydown` instead of `keyup`.
+2. For a absolute positioned element use width 100% and `text-align: center` to align a heading in center and above a relatively positioned element.
 
 # FAQ Collapse (project 12)
 
 1. For font-awesome you can use "unicode" to add icon dynamically using ::before/::after pseudo selectors. E.g.
+
+```CSS
    .faq.active::before {
-   content: '\f075',
-   font-family: 'Font Awesome 5 free';
+      content: '\f075',
+      font-family: 'Font Awesome 5 free';
    }
+```
+
 2. For the open/close buttons, the instructor wrapped both the icons in a button and used CSS to show/hide the icons depending upon the parent active class.
 
 # Random Choice Picker (project 13)
 
-1. Instead of using variable to track and call clearInterval, the instructor used setTimeout that after given time cleared the interval.
-2. Also, I thought Math.random() returns max value of 1. But that is not the case. So to pick random value from an array we can use: Math.floor(Math.random() \* array.length).
+1. Instead of using variable to track and call `clearInterval`, the instructor used `setTimeout` that after given time cleared the interval.
+2. Also, I thought `Math.random()` returns max value of 1. But that is not the case. So to pick random value from an array we can use: `Math.floor(Math.random() * array.length)`.
 3. I had added transition for animation but wasn't really required.
 
 # Movie App (project 17)
