@@ -72,3 +72,9 @@ Take aways / Differences between my approach and instructor.
 # Button Ripple Effect (project 20)
 
 1. I used `getBoundingClientRect` instead of `event.target.offsetTop`. This can have a slight performance. The `offsetTop` is calculated from beginning of your top most relative containre. The `getBoundingClientRect` is relative to the current view port.
+
+# Drag n Drop (project 21)
+
+1. I didn't knew there is a `draggable` HTML attribute.
+2. Also, there based on that there are these drag related events: `dragstart`, `dragend`, `dragover`, `dragenter`, `dragleave`, `drop`.
+3. This makes it very easy to handle the drag event.
