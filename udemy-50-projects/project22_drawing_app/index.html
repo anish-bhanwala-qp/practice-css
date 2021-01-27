@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="drawing-app">
+      <canvas class="canvas" width="700" height="700"></canvas>
+      <div class="controls">
+        <button class="control-item decrement">
+          <span class="text">-</span>
+        </button>
+        <div class="control-item">
+          <span class="text pencil-size">10</span>
+        </div>
+        <button class="control-item increment">
+          <span class="text">+</span>
+        </button>
+        <div class="control-item">
+          <input type="color" class="color-picker" value="#000000" />
+        </div>
+
+        <button class="control-item clear">
+          <span class="text">X</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
