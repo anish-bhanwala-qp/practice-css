@@ -78,3 +78,7 @@ Take aways / Differences between my approach and instructor.
 1. I didn't knew there is a `draggable` HTML attribute.
 2. Also, there based on that there are these drag related events: `dragstart`, `dragend`, `dragover`, `dragenter`, `dragleave`, `drop`.
 3. This makes it very easy to handle the drag event.
+
+# Drawing App (project 22)
+
+1. Didn't knew there is a color-picker element in HTML.
