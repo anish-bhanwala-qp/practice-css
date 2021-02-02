@@ -82,3 +82,8 @@ Take aways / Differences between my approach and instructor.
 # Drawing App (project 22)
 
 1. Didn't knew there is a color-picker element in HTML.
+
+# Content Placeholder (project 24)
+
+1. `object-fit` give more control to position an image inside a div. Similar to background but for content.
+2. To show _shining_ animation used `linear-gradient` to create a `background` with little shine and used `background-position` property to move the background to create the shining effect.
