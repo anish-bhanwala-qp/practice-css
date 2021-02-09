@@ -87,3 +87,7 @@ Take aways / Differences between my approach and instructor.
 
 1. `object-fit` give more control to position an image inside a div. Similar to background but for content.
 2. To show _shining_ animation used `linear-gradient` to create a `background` with little shine and used `background-position` property to move the background to create the shining effect.
+
+# Sticky Navbar (project 25)
+
+1. I didn't use `negative` `z-index` to place the overlay between the image background and the text. Instead I set the text position to absolute and placed it on top. The `z-index` `negative` was easier.
