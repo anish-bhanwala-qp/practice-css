@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.slide-container {
+    position: relative;
+    height: 100vh;
+}
+
+.slide-left {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 35%;
+    overflow: hidden;
+}
+
+.slide-left-container {
+    position: relative;
+    top: calc(100vh * -3);
+    transition: all 0.5s ease-in;
+}
+
+.slide-plain {
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.slide-right {
+    position: absolute;
+    left: 35%;
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides-container {
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease-in;
+}
+
+.slide-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.arrow {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-100%, 50%);
+    display: inline-block;
+    background-color: white;
+    color: #bbb;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.arrow.fa-arrow-down {
+    border-radius: 4px 0 0 4px;
+}
+
+.arrow.fa-arrow-up {
+    transform: translate(0%, -50%);
+    border-radius: 0 4px 4px 0;
+}
+
+.arrow:hover {
+    color: #222;
+}
