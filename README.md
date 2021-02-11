@@ -91,3 +91,7 @@ Take aways / Differences between my approach and instructor.
 # Sticky Navbar (project 25)
 
 1. I didn't use `negative` `z-index` to place the overlay between the image background and the text. Instead I set the text position to absolute and placed it on top. The `z-index` `negative` was easier.
+
+# Github Profiles (project 28)
+
+1. Wrapping input with form makes it easy to detect submit. I listened to keyup event for enter press. The instructor version is cleaner way.
