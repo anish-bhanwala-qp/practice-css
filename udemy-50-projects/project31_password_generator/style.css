@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #3B3B98;
+    --secondary-color: #24235B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.form {
+    background-color: var(--secondary-color);
+    width: 300px;
+    padding: 16px;
+    color: white;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.password-container {
+    width: 100%;
+    height: 50px;
+    background-color: #151637;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+.password {
+    color: white;
+    font-size: 18px;
+}
+
+.copy-btn {
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.copy-btn:focus {
+    outline: none;
+}
+
+.copy-btn:active {
+    transform: scale(0.98);
+}
+
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.length {
+    width: 40px;
+    font-size: 14px;
+}
+
+.length:focus {
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
