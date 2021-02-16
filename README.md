@@ -95,3 +95,7 @@ Take aways / Differences between my approach and instructor.
 # Github Profiles (project 28)
 
 1. Wrapping input with form makes it easy to detect submit. I listened to keyup event for enter press. The instructor version is cleaner way.
+
+# Good Cheap Fast (project 32)
+
+1. Use `checkbox` with `visibility: hidden` and sibling selector to toggle the button. I used javascript to achieve the same. This was cleaner, easy and less code.
