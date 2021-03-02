@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #9EC862;
+    --secondary-color: #7ADBF3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.main-header {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.add-btn>i {
+    padding-right: 2px;
+}
+
+.add-btn:focus {
+    outline: none;
+}
+
+.add-btn:active {
+    transform: scale(0.98);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 400px;
+    margin: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.note-header {
+    background-color: var(--primary-color);
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.note-btn:focus {
+    outline: none;
+}
+
+.note-btn:active {
+    transform: scale(0.98);
+}
+
+.note-content {
+    height: 400px;
+    background-color: white;
+    overflow: auto;
+    padding: 16px;
+    vertical-align: bottom;
+    font-size: 20px;
+    display: none;
+}
+
+.markdown .note-markdown {
+    display: block;
+}
+
+.note-textarea {
+    width: 100%;
+    overflow: auto;
+    border: none;
+    vertical-align: bottom;
+    font-family: inherit;
+    display: none;
+}
+
+.edit .note-textarea {
+    display: block;
+}
+
+.note-textarea:focus {
+    outline: none;
+}
