@@ -99,3 +99,7 @@ Take aways / Differences between my approach and instructor.
 # Good Cheap Fast (project 32)
 
 1. Use `checkbox` with `visibility: hidden` and sibling selector to toggle the button. I used javascript to achieve the same. This was cleaner, easy and less code.
+
+# Notes App (project 33)
+
+1. Use `element.addEventListener` instead of passing id in the callback like `<button class="note-btn" onclick="deleteNote('${id}')">`. While creating the DOM element I can access all it's children right there and attach event listeners. No need to play with the noteId.
