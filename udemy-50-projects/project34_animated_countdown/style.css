@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container,
+.container-replay,
+.countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown {
+    overflow: hidden;
+}
+
+.count {
+    font-size: 50px;
+    color: rgb(57, 174, 247);
+    transform-origin: bottom center;
+    animation: countdown 1s ease-out infinite;
+
+    position: relative;
+    z-index: -1;
+}
+
+.countdown-message {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 5px 0 10px;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes countdown {
+    0% {
+        transform: rotateZ(120deg);
+        opacity: 0;
+    }
+
+    20% {
+        transform: rotateZ(-15deg);
+        opacity: 1;
+    }
+
+    30% {
+        transform: rotateZ(15deg);
+        opacity: 1;
+    }
+
+    40% {
+        transform: rotateZ(0deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: rotateZ(-15deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateZ(-120deg);
+        opacity: 0;
+    }
+}

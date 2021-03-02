@@ -103,3 +103,8 @@ Take aways / Differences between my approach and instructor.
 # Notes App (project 33)
 
 1. Use `element.addEventListener` instead of passing id in the callback like `<button class="note-btn" onclick="deleteNote('${id}')">`. While creating the DOM element I can access all it's children right there and attach event listeners. No need to play with the noteId.
+
+# Animated Countdown (project 34)
+
+1. I was trying to synchronize `setTimeout` to `animation-time` which I don't think is a good idea. Instead the instructor used `setTimeout` to add/remove css classes for each countdown number span. Which requires little more markup but will not have synchronization issues.
+2. Use `animationend` event. In this case to display next number or finish the animation once countdown reaches zero.
