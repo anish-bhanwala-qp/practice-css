@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Tab Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-container">
+        <div id="home" class="content show">
+          <h1>Home</h1>
+        </div>
+        <div id="work" class="content">
+          <h1>Work</h1>
+        </div>
+        <div id="blog" class="content">
+          <h1>Blog</h1>
+        </div>
+        <div id="about-us" class="content">
+          <h1>About Us</h1>
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tab active" data-target="home">
+          <i class="fas fa-home"></i>Home</div>
+        <div class="tab" data-target="work"><i class="fas fa-box"></i>Work</div>
+        <div class="tab" data-target="blog"><i class="fas fa-book-open"></i>Blog</div>
+        <div class="tab" data-target="about-us"><i class="fas fa-users"></i>About Us</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

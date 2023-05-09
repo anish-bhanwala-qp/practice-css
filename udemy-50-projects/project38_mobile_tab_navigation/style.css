@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #B388C5;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 16px;
+    width: 340px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.content-container {
+    flex-grow: 1;    
+    position: relative;
+}
+
+.content {   
+    height: 100%; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 16px 0 0;
+
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;    
+}
+
+#home {
+    background-image: url('https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80');
+}
+
+#work {
+    background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+#about-us {
+    background-image: url('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80');
+}
+
+#blog {
+    background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.tab {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #777777;
+    font-size: 12px;
+}
+
+.tab .fas {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.tab.active {
+    color: #8F43AD;
+}
+
+.tab:hover {
+    cursor: pointer;
+    color: #8F43AD;
+}
+
+.show {
+    opacity: 1;
+}
